@@ -12,7 +12,7 @@ body {
    background: linear-gradient(to right, #00aaff, #00ff6c);
 }
 
-.grid-calculadora {
+.calculator-grid {
    display: grid;
    justify-content: center;
    align-content: center;
@@ -21,22 +21,22 @@ body {
    grid-template-rows: minmax(120px, auto) repeat(5, 100px);
 }
 
-.grid-calculadora > button {
+.calculator-grid > button {
    cursor: pointer;
    font-size: 2rem;
    border: 1px solid white;
    outline: none;
    background-color: rgba(255, 255, 255, .75);
 }
-.grid-calculadora > button:hover {
+.calculator-grid > button:hover {
    background-color: rgba(255, 255, 255, .9);
 }
 
-.span-dois {
+.span-two {
    grid-column: span 2;
 }
 
-.saida {
+.output {
    grid-column: 1 / -1;
    background-color: rgba(0, 0, 0, .75);
    display: flex;
@@ -48,12 +48,12 @@ body {
    word-break: break-all;
 }
 
-.saida .operando-anterior {
+.output .previous-operand {
    color: rgba(255, 255, 255, .75);
    font-size: 1.5rem;
 }
 
-.saida .operando-atual {
+.output .current-operand {
    color: white;
    font-size: 2.5rem;
 }
