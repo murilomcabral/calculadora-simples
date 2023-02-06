@@ -73,10 +73,6 @@ class Calculator {
       }
    }
 
-      // const floatNumber = parseFloat(number)
-      // if(isNaN(floatNumber)) return ''
-      // return floatNumber.toLocaleString('en')
-
    updateDisplay() {
       this.currentOperandTextElement.innerText =
       this.getDisplayNumber(this.currentOperand)
@@ -116,7 +112,6 @@ operationButtons.forEach(button => {
 equalsButton.addEventListener('click', button => {
    calculator.compute()
    calculator.updateDisplay()
-   // previousOperandTextElement.innerText = ''
 })
 
 allClearButton.addEventListener('click', button => {
